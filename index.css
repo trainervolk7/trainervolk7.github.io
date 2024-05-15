@@ -1,4 +1,85 @@
 html {
-    background-color: #1463F3;
-    margin: auto;
+  background-color: rgb(41, 39, 39);
+}
+body {
+  margin: 0%;
+}
+nav {
+  /* background-color: gray; */
+  /* text-align: center; */
+  position: fixed;
+  background-color: navy;
+  display: flex; 
+  /* justify-content: space-between;  */
+  align-items: center;
+  padding-right: 5%;
+  width: 100%;
+  padding: 1%;
+}
+.content {
+  padding-top: 6%;    
+}
+.flex-container {
+  display: flex;
+  /* background-color: white; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5%;
+  /* flex-wrap: wrap; */
+}
+.flex-container > div{
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* padding: 20px; */
+  padding: 1%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+button{
+    text-decoration: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+h1, p{
+    color: black;
+}
+
+.button-link {
+    color: black;
+    position: relative;
+}
+  
+/* White underline */
+.button-link::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position relative to button link */
+  left: 0; /* Align underline to start of button link */
+  bottom: -10px; /* Position the underline below the text */
+  width: 100%; /* Full width */
+  height: 3px; /* Thickness of the underline */
+  border-radius: 5px;
+  background-color: transparent; /* Initially transparent */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+  
+/* Change color on hover */
+.button-link:hover::after {
+  background-color: white; /* Color of the underline on hover */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: navy;
+  margin: 0%;
 }

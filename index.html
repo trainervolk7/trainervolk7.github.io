@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>JV Portfolio</title>
+        <title>John Van Hooser</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css"/>
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./photography">photography</a></li>
-                <!-- <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li> -->
-            </ul>
+            <div>
+                <a href="./">
+                <h1 style="margin: 0; margin-left: 5%; color: white;">John Van Hooser</h1>
+                <h3 style="margin: 0; margin-left: 5%; width: 100%; color: gray;">Senior in Computer Engineering at Florida Tech</h3>
+                </a>
+            </div>
+            <div style="margin-left: 25%;">
+                <ul style="display: flex; list-style: none;">
+                    <li class = "button-link"><button style="color: white;" onclick="window.location.href='./'">about</button></li>
+                    <li style="margin-left: 10%;" class = "button-link"><button style="color: gray;" onclick="window.location.href='./projects'">projects</button></li>
+                    <li style="margin-left: 10%;" class = "button-link"><button style="color: gray;" onclick="window.location.href='./photography'">photography</button></li>
+                </ul>
+            </div>
         </nav>
-        <h1>Hello World</h1>
-        <p>Initial Test</p>
-        <!-- For when I get youtube started -->
-        <!-- <iframe width="420" height="345" src="">
-        </iframe> -->
+        <div class="content">
+            <div class="flex-container">
+                <div style="height: 325px; background-color: transparent; width: 12.5%;">
+                </div>
+                <div style="background-color: transparent; height: 325px; width: 50%;">
+                    <h1 style="color: gray;">About Me:</h1>
+                    <h3 style="text-align: left; color: white;">Hello there! I am currently a Senior in undergraduate Computer Engineering at Florida Tech. 
+                        I am an Eagle Scout from Troop 451 located in Lusby, MD. 
+                        Professionally, my interests include working with microcontrollers, robotics, and space exploration. 
+                        Leisurely, I am an avid fan of all things superheroes and board games. 
+                        I have taken numerous courses in aerospace engineering, outside of my computer engineering major. 
+                        This past semester, I took a mechanical graduate level course in mechatronics. 
+                        In the past, I have assisted in graduate research through the Autonomy Lab at Florida Tech for characterizing unknown non-cooperative spacecraft 
+                        using python for shape and superquadtric generation and labeling to be then used in training YOLO.
+                    </h3>
+                </div>
+                <div style="height: 325px; width: 25%;">
+                    <img src="Assets/Me.jpg" alt="John Van Hooser" style="width: 100%; height: auto;"/>
+                </div>
+                <div style="height: 325px; background-color: transparent; width: 12.5%;">
+                </div>
+            </div>
+            <!-- For when I get youtube started -->
+            <!-- <iframe width="420" height="345" src="">
+            </iframe> -->
+        </div>
+        <footer>
+            <p style="text-align: center; margin: 0%; padding: 3%; color: white;">© Copyright 2024 John Van Hooser</p>
+        </footer>
     </body>
 </html>
