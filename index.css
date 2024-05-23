@@ -1,59 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 html {
   background-color: rgb(41, 39, 39);
 }
 body {
   margin: 0%;
+  font-family: Arial; /*change font*/
 }
 nav {
   /* background-color: gray; */
   /* text-align: center; */
   position: fixed;
   background-color: navy;
-  display: flex; 
+  /* display: flex;  */
   /* justify-content: space-between;  */
-  align-items: center;
-  padding-right: 5%;
+  /* align-items: center; */
+  /* padding-right: 5%; */
   width: 100%;
-  padding: 1%;
+  height: 80px;
+  /* padding: 1%; */
 }
-.content {
-  padding-top: 6%;    
+.name {
+  display: inline-block;
+  color: white;
+  font-size: 35px;
+  /* margin-left: 5%; */
+  line-height: 80px;
+  padding: 0 100px;
 }
-.flex-container {
-  display: flex;
-  /* background-color: white; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0.5%;
-  /* flex-wrap: wrap; */
+nav ul{
+  float:right;
+  margin-right: 100px;
+  list-style: none;
+  /* display: flex;  */
+  /* margin-left: 20%; */
 }
-.flex-container > div{
-  background-color: white;
-  border-radius: 5px;
-  width: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
-  /* padding: 20px; */
-  padding: 1%;
-  margin-top: 0%;
-  margin-bottom: 0%;
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  /* margin-left: 7% */
 }
-button{
-    text-decoration: none; 
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: larger;
+nav ul li button{
+  font-size: 17px;
+  padding: 7px 13px;
 }
 
-h1, p{
-    color: black;
+#current {
+  color: white;
 }
 
 .button-link {
-    color: black;
-    position: relative;
+  color: gray;
+  position: relative;
 }
   
 /* White underline */
@@ -74,12 +77,140 @@ h1, p{
   background-color: white; /* Color of the underline on hover */
 }
 
-a {
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.image-div{
+  background-color: white;
+}
+.image{
+  width: 100%; 
+  height: auto;
+}
+
+@media (max-width: 1000px){
+  .name {
+    font-size: 15px;
+    padding-left: 50px;
+  }
+  nav ul li{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: navy;
+    top: 80px;
+    /* left: -40%; */
+    /* left: 0; */
+    transform: translateX(-100%);
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  #check:checked ~ ul{
+    /* left: 0; */
+    transform: translateX(0%);
+  }
+  .flex-container >div{
+    flex: 1 100%;
+  }
+  .main-text{
+    flex: 3;
+    order: 2;
+  }
+  .image-div{
+    order: 1;
+    background-color: transparent; /*problems if color, try to fix*/
+  }
+  .image{
+    object-fit: contain;
+    width: 50%;
+  }
+}
+
+.content {
+  padding-top: 100px;    
+}
+.flex-container {
+  display: flex;
+  /* background-color: white; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5%;
+  flex-flow: row wrap;
+  /* flex-wrap: wrap; */
+}
+.flex-container > div{
+  /* background-color: white; */
+  border-radius: 5px;
+  /* flex: 1 100%; */
+  /* width: 50%; */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* padding: 20px; */
+  padding: 1%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+button{
+  text-decoration: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.p-text{
+  text-align: left;
+}
+p {
+  color: white;
+  font-size: 20px;
+}
+.list-item{
+  color: white;
+  font-size: 20px;
+  /* padding: 1%; */
+  text-align: left;
+}
+
+a.text-link {
   text-decoration: none;
-  color: black;
+  color: lightblue;
+}
+a.text-link:hover {
+  text-decoration: underline;
 }
 
 footer {
   background-color: navy;
   margin: 0%;
+}
+
+.icon{
+  font-size: 250%;
+  margin: 0%;
+  color: white;
 }
