@@ -152,7 +152,8 @@ nav ul li button{
 }
 
 .content {
-  padding-top: 100px;    
+  padding-top: 100px;
+  min-height:100vh;
 }
 .flex-container {
   display: flex;
@@ -207,6 +208,7 @@ a.text-link:hover {
 footer {
   background-color: navy;
   margin: 0%;
+  bottom: 0;
 }
 
 .icon{
