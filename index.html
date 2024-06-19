@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>John Van Hooser</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="index.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    </head>
-    <body>
-        <nav>
-                <input type="checkbox" id="check"/>
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <a href="./">
-                <h1 class="name">John Van Hooser</h1>
-                </a>
-                <ul>
-                    <li><button id = "current" class = "button-link" onclick="window.location.href='./'">About</button></li>
-                    <li><button class = "button-link" onclick="window.location.href='./projects'">Projects</button></li>
-                    <li><button class = "button-link" onclick="window.location.href='./photography'">Photography</button></li>
-                    <li><button class = "button-link" onclick="window.location.href='./CV'">CV</button></li>
-                </ul>
-        </nav>
-        <div class="content">
-            <div class="flex-container">
-                <div class="main-text" style="background-color: transparent; height: 25%; width: 75%;">
-                    <h3 style="color: gray;">Senior in Computer Engineering at Florida Tech</h3>
-                </div>
+
+<head>
+    <title>John Van Hooser</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="./">
+            <h1 class="name">John Van Hooser</h1>
+        </a>
+        <ul>
+            <li><button id="current" class="button-link" onclick="window.location.href='./'">About</button></li>
+            <li><button class="button-link" onclick="window.location.href='./projects'">Projects</button></li>
+            <li><button class="button-link" onclick="window.location.href='./photography'">Photography</button></li>
+            <li><button class="button-link" onclick="window.location.href='./CV'">CV</button></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="flex-container">
+            <div class="main-text" style="background-color: transparent; height: 25%; width: 75%;">
+                <h3 style="color: gray;">Senior in Computer Engineering at Florida Tech</h3>
             </div>
-            <div class="flex-container">
-                    <a href="https://www.linkedin.com/in/john-van-hooser/">
-                        <i class="fa-brands fa-linkedin icon"></i>
-                    </a>
-                    <a style="padding-left: 20px;" href="https://github.com/trainervolk7">
-                        <i class="fa-brands fa-github icon"></i>
-                    </a>
-                    <!-- <a href="#">
+        </div>
+        <div class="flex-container">
+            <a href="https://www.linkedin.com/in/john-van-hooser/">
+                <i class="fa-brands fa-linkedin icon"></i>
+            </a>
+            <a style="padding-left: 20px;" href="https://github.com/trainervolk7">
+                <i class="fa-brands fa-github icon"></i>
+            </a>
+            <!-- <a href="#">
                         <i class="fa-brands fa-youtube icon"></i>
                     </a>
                     <a href="#">
@@ -47,112 +49,134 @@
                     <a href="#">
                         <i class="fa-solid fa-envelope icon"></i>
                     </a> -->
-            </div>
-            <div class="flex-container">
-                <div class="main-text" style="background-color: transparent; height: 25%; width: 50%;">
-                    <h1 style="color: gray;">About Me:</h1>
-                    <p class="p-text">&emsp;Hello there! I am currently a Senior in undergraduate Computer Engineering at <a class="text-link" href="https://catalog.fit.edu/preview_program.php?catoid=18&poid=7273">Florida Tech</a>. 
-                        I am an Eagle Scout from Troop 451 located in Lusby, MD. 
-                        Professionally, my interests include working with microcontrollers, robotics, and space exploration. 
-                        Leisurely, I am an avid fan of all things superheroes and board games.  
-                        Recently I have been working on becoming a part of the maker community, where I will be sharing my projects
-                        related to software, hardware, and 3D printing. I hope that you choose to follow me on my maker journey!
-                    </p>
-                </div>
-                <div class="image-div" style="height: 25%; width: 25%;">
-                    <img class="image" src="Assets/Me2.jpg" alt="John Van Hooser"/>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div style="height: 25%; background-color: transparent; width: 75%;">
-                    <h1 style="color: gray;">Background:</h1>
-                    <p class="p-text">&emsp;I was raised by two electrical engineering parents who inspired my love and interest in engineering. 
-                        My Papa was a lead engineer for NASA during the Apollo and Shuttle eras, and he sparked my love and admiration for exploration through the vastness of space. 
-                        My fascination with Superheroes have not just been an escape for me, but have guided my moral compass towards showing compassion towards others, the desire to always help others, and show kindness. 
-                        I was involved with BSA Scouting from the age of 7 to 18, where I learned leadership, perseverance, and the importance of helping others. 
-                        I progressed through the ranks to Eagle Scout, and while doing so, my love for nature, hiking, travel, and photography grew. 
-                        For a few years in middle and high school, I aspired to be a film director and directed several of my own short films. 
-                        From a early age, I have been active in robotics from FIRST Lego League, HS VEX, VEX U, and projects throughout college. 
-                    </p>
-                    <br>
-                    <p class="p-text">&emsp;For years, I have watched Mark Rober, The Hacksmith, and The King of Random in awe of their cool projects. 
-                        I visited my first Maker Faire in 2023. 
-                        Then, after a research assistant role didn't work out for the summer, I decided it was finally time to challenge myself, pursue my own maker projects, and document the process as a content creator. 
-                        With college winding down and plenty of courses under my belt, I can begin applying myself in something that I can express all my interests combined into one. 
-                        I take this leap of faith in hopes of one day being able to help others around me through the gizmos I make and the pursuit to challenge themselves. 
-                    </p>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div style="height: 25%; background-color: transparent; width: 75%;">
-                    <h1 style="color: gray;">Education:</h1>
-                    <p class="p-text">&emsp;While pursuing a degree in Computer Engineering, my core classes involve topics in electrical and computer science. 
-                        Through my computer engineering courses, I have become familiar with circuit design and analysis, C++, introductory full-stack web development, and low-level programming of Arduino and Raspberry Pi. 
-                        My curiosity for learning doesn't stop there; I have taken numerous courses in Aerospace Engineering and Mechanical Engineering. 
-                        For Aerospace Engineering, I have taken 2 of the core courses of the major, Control Systems, and this fall, I will be taking Space Vehicle Control. 
-                        This past semester, I took a Mechanical Engineering graduate-level course in Advanced Mechatronics, which extended my knowledge from Computer Engineering courses. 
-                        In the course, I applied the topics previously briefly went over and then introduced me to work with a broader range of components, motor control, and motor system identification through several projects. 
-                        This fall, I will take another graduate-level Mechanical Engineering course in Instrumentation.  
-                        I have also taken an introductory course in Space Sciences. 
-                        I am a member of a mechanical engineering senior design team tasked to design a flexible end effector to be integrated and tested using a Stretch robot by Hello Robot.
-                    </p>
-                    <br>
-                    <p class="p-text">&emsp;I was a lead programmer on the VEX U team at Florida Tech for the first two and a half years before my assisting research and classes took up most of my time. 
-                        In Vex robotics, I programmed both driver and autonomous control of one of the competition robots, applied odometry and PID control, and assisted others in learning to program the robots. 
-                        As an assistant researcher, I assisted a PhD candidate from the Autonomy Lab at Florida Tech in her research of characterizing unknown non-cooperative spacecraft. 
-                        I assisted with writing Python code to develop superquadrics datasets to analyze familiarity with satellite components and develop algorithms to perform histogram analysis of variance in pixel data.
-                    </p>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div style="height: 25%; background-color: transparent; width: 50%;">
-                    <h1 style="color: gray;">Ongoing Projects:</h1>
-                    <ul style="list-style-type: circle; ;">
-                        <li class="list-item">This portfolio website!</li>
-                        <li class="list-item">Autonomous navigation with a DJI Robomaster S1 using Raspberry Pi 4 and ROS2</li>
-                        <li class="list-item">Upgrading Trafficstopper follower robot using 3D printed parts and improving software. Trafficstopper was a robot that a friend and I designed for a class project involving image processing </li>
-                        <li class="list-item">Working with ROS2 and Gazebo in preparation to work with Senior Design team to design a flexible end effector to be integrated on Hello Robot’s Stretch 2 </li>
-                        <li class="list-item">Designing a Star Wars droid to enter into the Autodesk design challenge in Fusion 360</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div class="image-div" style="height: 25%; width: 25%;">
-                    <img class="image" src="Assets/Robomaster.jpg" alt="DJI Robomaster S1"/>
-                    <p style="text-align: center; color: gray;"><a  class="text-link" style="color: blue;" href="https://www.dji.com/robomaster-s1">DJI Robomaster S1</a></p>
-                </div>
-                <div class="image-div" style="height: 25%; width: 25%;">
-                    <img class="image" src="Assets/Trafficstopper.jpg" alt="V1 Trafficstopper Robot"/>
-                    <p style="text-align: center; color: gray;">V1 Trafficstopper Robot</p>
-                </div>
-                <div class="image-div" style="height: 25%; width: 25%;">
-                    <img class="image" src="Assets/stretch.png" alt="Stretch Robot"/>
-                    <p style="text-align: center; color: gray;">Stretch Robot by <a class="text-link" style="color: blue;" href="https://hello-robot.com/">Hello Robot</a></p>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div style="height: 25%; background-color: white; width: 25%;">
-                    <img class="image" src="Assets/Me.jpg" alt="John Van Hooser"/>
-                </div>
-                <div style="height: 25%; background-color: transparent; width: 50%;">
-                    <h1 style="color: gray;">Hobbies:</h1>
-                    <br>
-                    <ul style="list-style-type: circle; ;">
-                        <li class="list-item">Fulltime nerd of many franchises</li>
-                        <li class="list-item">Casual disc golfer</li>
-                        <li class="list-item">Photography/Film</li>
-                        <li class="list-item">Reading comic books</li>
-                        <li class="list-item">Board and card games with friends</li>
-                        <li class="list-item">Keeping up with the latest space news</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- For when I get youtube started -->
-            <!-- <iframe width="420" height="345" src="">
-            </iframe> -->
         </div>
-        <footer>
-            <p style="text-align: center; margin: 0%; padding: 3%; color: white;">© Copyright 2024 John Van Hooser</p>
-        </footer>
-    </body>
+        <div class="flex-container">
+            <div class="main-text" style="background-color: transparent; height: 25%; width: 50%;">
+                <h1 style="color: gray;">About Me:</h1>
+                <p class="p-text">&emsp;Hello there! I am currently a Senior in undergraduate Computer Engineering at
+                    Florida Tech. I am an Eagle Scout from Troop 451, Lusby, MD. Professionally, my interests include
+                    working with microcontrollers, robotics, and space exploration. Leisurely, I am an avid fan of all
+                    things superheroes and board games. Recently, I have been working on becoming a part of the maker
+                    community, where I will share my software, hardware, and 3D printing projects. I hope that you
+                    follow me on my maker journey!
+                </p>
+            </div>
+            <div class="image-div" style="height: 25%; width: 25%;">
+                <img class="image" src="Assets/Me2.jpg" alt="John Van Hooser" />
+            </div>
+        </div>
+        <div class="flex-container">
+            <div style="height: 25%; background-color: transparent; width: 75%;">
+                <h1 style="color: gray;">Background:</h1>
+                <p class="p-text">&emsp;I was raised by two electrical engineering parents who inspired my love and
+                    interest in engineering. My Papa was a lead engineer for NASA during the Apollo and Shuttle eras,
+                    and he sparked my love and admiration for exploration through the vastness of space. My fascination
+                    with Superheroes has not just been an escape for me but has guided my moral compass towards showing
+                    compassion towards others, the desire to always help others, and show kindness. I was involved with
+                    BSA Scouting from 7 to 18, where I learned leadership, perseverance, and the importance of helping
+                    others. I progressed through the ranks to Eagle Scout, and while doing so, my love for nature,
+                    hiking, travel, and photography grew. For a few years in middle and high school, I aspired to be a
+                    film director and directed several of my own short films. From an early age, I have been active in
+                    robotics from FIRST Lego League, HS VEX, VEX U, and projects throughout college.
+                </p>
+                <br>
+                <p class="p-text">&emsp;For years, I have watched Mark Rober, The Hacksmith, and The King of Random in
+                    awe of their incredible projects. I visited my first Maker Faire in 2023. Then, after a research
+                    assistant role didn’t work out for the summer, I decided it was finally time to challenge myself,
+                    pursue my own maker projects, and document the process as a content creator. With college winding
+                    down and plenty of courses under my belt, I can begin applying myself in something that I can
+                    express all my interests combined into one. I take this leap of faith in hopes of one day being able
+                    to help others around me through the gizmos I make and the pursuit to challenge themselves.
+                </p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div style="height: 25%; background-color: transparent; width: 75%;">
+                <h1 style="color: gray;">Education:</h1>
+                <p class="p-text">&emsp;While pursuing a degree in Computer Engineering, my core classes involve topics
+                    in electrical and computer science. Through my computer engineering courses, I have become familiar
+                    with circuit design and analysis, C++, introductory full-stack web development, and low-level
+                    programming of Arduino and Raspberry Pi. My curiosity for learning doesn’t stop there; I have taken
+                    numerous courses in Aerospace Engineering and Mechanical Engineering. For Aerospace Engineering, I
+                    have taken 2 of the core courses of the major, Control Systems, and this fall, I will be taking
+                    Space Vehicle Control. This past semester, I took a Mechanical Engineering graduate-level course in
+                    Advanced Mechatronics, which extended my knowledge from Computer Engineering courses. In the course,
+                    I applied the topics previously briefly went over and then introduced me to work with a broader
+                    range of components, motor control, and motor system identification through several projects. This
+                    fall, I will take another graduate-level Mechanical Engineering course in Instrumentation. I have
+                    also taken an introductory course in Space Sciences. I am a member of a mechanical engineering
+                    senior design team tasked to design a flexible end effector to be integrated and tested using a
+                    Stretch robot by Hello Robot.
+                </p>
+                <br>
+                <p class="p-text">&emsp;I was a lead programmer on the VEX U team at Florida Tech for the first two and
+                    a half years before my assisting research, and classes took up most of my time. In Vex robotics, I
+                    programmed both driver and autonomous control of one of the competition robots, applied odometry and
+                    PID control, and assisted others in learning to program the robots. As an assistant researcher, I
+                    assisted a PhD candidate from the Autonomy Lab at Florida Tech in her research characterizing
+                    unknown non-cooperative spacecraft. I assisted with writing Python code to develop superquadrics
+                    datasets to analyze familiarity with satellite components and develop algorithms to perform
+                    histogram analysis of variance in pixel data.
+                </p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div style="height: 25%; background-color: transparent; width: 50%;">
+                <h1 style="color: gray;">Ongoing Projects:</h1>
+                <ul style="list-style-type: circle; ;">
+                    <li class="list-item">This portfolio website!</li>
+                    <li class="list-item">Autonomous navigation with a DJI Robomaster S1 using Raspberry Pi 4 and ROS2
+                    </li>
+                    <li class="list-item">Upgrading Trafficstopper follower robot using 3D printed parts and improving
+                        software. Trafficstopper was a robot that a friend and I designed for a class project involving
+                        image processing </li>
+                    <li class="list-item">Working with ROS2 and Gazebo in preparation to work with the Senior Design
+                        team to design a flexible end effector to be integrated into Hello Robot's Stretch 2</li>
+                    <li class="list-item">Designing a Star Wars droid to enter into the Autodesk design challenge in
+                        Fusion 360</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="image-div" style="height: 25%; width: 25%;">
+                <img class="image" src="Assets/Robomaster.jpg" alt="DJI Robomaster S1" />
+                <p style="text-align: center; color: gray;"><a class="text-link" style="color: blue;"
+                        href="https://www.dji.com/robomaster-s1">DJI Robomaster S1</a></p>
+            </div>
+            <div class="image-div" style="height: 25%; width: 25%;">
+                <img class="image" src="Assets/Trafficstopper.jpg" alt="V1 Trafficstopper Robot" />
+                <p style="text-align: center; color: gray;">V1 Trafficstopper Robot</p>
+            </div>
+            <div class="image-div" style="height: 25%; width: 25%;">
+                <img class="image" src="Assets/stretch.png" alt="Stretch Robot" />
+                <p style="text-align: center; color: gray;">Stretch Robot by <a class="text-link" style="color: blue;"
+                        href="https://hello-robot.com/">Hello Robot</a></p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div style="height: 25%; background-color: white; width: 25%;">
+                <img class="image" src="Assets/Me.jpg" alt="John Van Hooser" />
+            </div>
+            <div style="height: 25%; background-color: transparent; width: 50%;">
+                <h1 style="color: gray;">Hobbies:</h1>
+                <br>
+                <ul style="list-style-type: circle; ;">
+                    <li class="list-item">Fulltime nerd of many franchises</li>
+                    <li class="list-item">Casual disc golfer</li>
+                    <li class="list-item">Photography/Film</li>
+                    <li class="list-item">Reading comic books</li>
+                    <li class="list-item">Board and card games with friends</li>
+                    <li class="list-item">Keeping up with the latest space news</li>
+                </ul>
+            </div>
+        </div>
+        <!-- For when I get youtube started -->
+        <!-- <iframe width="420" height="345" src="">
+            </iframe> -->
+    </div>
+    <footer>
+        <p style="text-align: center; margin: 0%; padding: 3%; color: white;">© Copyright 2024 John Van Hooser</p>
+    </footer>
+</body>
+
 </html>
