@@ -6,29 +6,27 @@
 }
 html {
   background-color: rgb(41, 39, 39);
+  /* Hides scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
 }
-body {
-  margin: 0%;
-  font-family: Arial; /*change font*/
+/* Hides scrollbar */
+html::-webkit-scrollbar{
+  display: none;
 }
+
+/* Navigation Bar CSS */
 nav {
-  /* background-color: gray; */
-  /* text-align: center; */
   position: fixed;
   background-color: navy;
-  /* display: flex;  */
-  /* justify-content: space-between;  */
-  /* align-items: center; */
-  /* padding-right: 5%; */
   width: 100%;
   height: 80px;
-  /* padding: 1%; */
 }
 .name {
   display: inline-block;
   color: white;
   font-size: 35px;
-  /* margin-left: 5%; */
   line-height: 80px;
   padding: 0 100px;
 }
@@ -36,29 +34,29 @@ nav ul{
   float:right;
   margin-right: 100px;
   list-style: none;
-  /* display: flex;  */
-  /* margin-left: 20%; */
 }
 nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
-  /* margin-left: 7% */
 }
 nav ul li button{
   font-size: 17px;
   padding: 7px 13px;
 }
-
 #current {
   color: white;
 }
-
+button{
+  text-decoration: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .button-link {
   color: gray;
   position: relative;
 }
-  
 /* White underline */
 .button-link::after {
   content: ''; /* Required for pseudo-elements */
@@ -70,13 +68,11 @@ nav ul li button{
   border-radius: 5px;
   background-color: transparent; /* Initially transparent */
   transition: background-color 0.3s ease; /* Smooth transition for color change */
-}
-  
+} 
 /* Change color on hover */
 .button-link:hover::after {
   background-color: white; /* Color of the underline on hover */
 }
-
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -86,11 +82,40 @@ nav ul li button{
   cursor: pointer;
   display: none;
 }
-
 #check{
   display: none;
 }
 
+/* Main Content */
+.icon{
+  font-size: 250%;
+  margin: 0%;
+  color: white;
+}
+body {
+  margin: 0%;
+  font-family: Arial; /*change font*/
+}
+.content {
+  padding-top: 100px;
+  min-height:100vh;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5%;
+  flex-flow: row wrap;
+}
+.flex-container > div{
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 1%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
 .image-div{
   background-color: white;
 }
@@ -98,7 +123,48 @@ nav ul li button{
   width: 100%; 
   height: auto;
 }
+.p-text{
+  text-align: left;
+}
+p {
+  color: white;
+  font-size: 20px;
+}
+.list-item{
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+a.text-link {
+  text-decoration: none;
+  color: lightblue;
+}
+a.text-link:hover {
+  text-decoration: underline;
+}
 
+h2 { 
+  display: flex; 
+  flex-direction: row; 
+  color: gray;
+} 
+
+h2:before, 
+h2:after { 
+    content: "";
+    flex: 1 1; 
+    border-bottom: 4px solid gray; 
+    margin: auto; 
+} 
+
+/* Footer CSS */
+footer {
+  background-color: navy;
+  margin: 0%;
+  bottom: 0;
+}
+
+/* Responsive Webpage CSS */
 @media (max-width: 1000px){
   .name {
     font-size: 15px;
@@ -149,70 +215,4 @@ nav ul li button{
     object-fit: contain;
     width: 50%;
   }
-}
-
-.content {
-  padding-top: 100px;
-  min-height:100vh;
-}
-.flex-container {
-  display: flex;
-  /* background-color: white; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0.5%;
-  flex-flow: row wrap;
-  /* flex-wrap: wrap; */
-}
-.flex-container > div{
-  /* background-color: white; */
-  border-radius: 5px;
-  /* flex: 1 100%; */
-  /* width: 50%; */
-  margin-left: 10px;
-  margin-right: 10px;
-  /* padding: 20px; */
-  padding: 1%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-button{
-  text-decoration: none; 
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.p-text{
-  text-align: left;
-}
-p {
-  color: white;
-  font-size: 20px;
-}
-.list-item{
-  color: white;
-  font-size: 20px;
-  /* padding: 1%; */
-  text-align: left;
-}
-
-a.text-link {
-  text-decoration: none;
-  color: lightblue;
-}
-a.text-link:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: navy;
-  margin: 0%;
-  bottom: 0;
-}
-
-.icon{
-  font-size: 250%;
-  margin: 0%;
-  color: white;
 }
