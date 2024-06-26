@@ -1,5 +1,4 @@
 *{
-  padding: 0;
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
@@ -31,6 +30,7 @@ nav {
   padding: 0 100px;
 }
 nav ul{
+  
   float:right;
   margin-right: 100px;
   list-style: none;
@@ -143,14 +143,14 @@ a.text-link:hover {
   text-decoration: underline;
 }
 
-h2 { 
+.year { 
   display: flex; 
   flex-direction: row; 
   color: gray;
 } 
 
-h2:before, 
-h2:after { 
+.year:before, 
+.year:after { 
     content: "";
     flex: 1 1; 
     border-bottom: 4px solid gray; 
